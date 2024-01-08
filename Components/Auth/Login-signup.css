@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' sans-serif;
+  
+  }
+  
+  /* main container */
+  .container {
+    background-image: linear-gradient(to right, #0e0109, #110610, #120b15, #130f1a, #13131e, #171f31, #142d45, #003c58, #005c79, #007c82, #009a6c, #00b53a);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    color: white;
+  }
+  
+  /* Top Left Logo Field */
+  .Logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15.1875rem;
+    height: 6.875rem;
+    left: 2rem;
+    top: 2.125rem;
+    mix-blend-mode: normal;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 41px 14px rgba(73, 122, 93, 1);
+  }
+  
+  .Logo img {
+    width: 246px;
+    height: 81px;
+  }
+  
+  /*Form container */
+  .container-1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+  }
+  
+  .Form-container {
+    width: 60%;
+    margin: auto;
+    margin-top: 9rem;
+  }
+  
+  h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin: 1rem 0;
+  }
+  
+  .description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+  }
+  
+  .input-layout {
+    margin-top: 1.75rem;
+    display: block;
+    width: 100%;
+    height: 3rem;
+    outline: 0;
+    border: 1px solid #e7e8ee;
+    border-radius: 6px;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    font-size: 1.4rem;
+    line-height: 1rem;
+  }
+  
+  .input-layout:hover {
+    border: 3px solid #34c139;
+  }
+  
+  .password-field {
+    display: flex;
+  }
+  
+  .eye-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .icon {
+    position: absolute;
+    margin-top: 30px;
+    margin-right: 40px;
+  }
+  
+  .termsOfService {
+    margin-top: 1.875rem;
+    font-size: 1.125rem;
+    text-transform: none;
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .termsOfService input {
+    margin-right: 0.625rem;
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  
+  button {
+    width: 100%;
+    height: 3rem;
+    margin-top: 1.875rem;
+    border-radius: 8px;
+    border: 1px solid rgba(213, 216, 227, 1);
+    background: linear-gradient(90deg, #12d576, #2d5c8f);
+    color: white;
+    font-weight: 600;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background: rgb(213, 212, 212);
+  }
+  
+  .splitter {
+    border-bottom: 0.0625rem solid black;
+    width: 100%;
+    height: 0;
+    margin: 2.625rem 0;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+  }
+  
+  .splitter span {
+    background: white;
+    padding: 1rem;
+  }
+  
+  .Google-Signup button {
+    margin: 0;
+    background: rgb(212, 211, 211);
+  }
+  
+  .signin-but {
+    margin-top: 1.875rem;
+  }
+  
+  /* right side image section */
+  .img-container {
+    background-image: url(./bit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50vw;
+    height: 100%;
+    border-radius: 25px;
+  }
+  
+  /*Responsive */
+  /* Screen size up to 480px */
+  @media only screen and (max-width: 30rem) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container-1 {
+      width: 100% !important;
+    }
+  
+    .Form-container {
+      width: 90%;
+    }
+  
+    .img-container {
+      display: none;
+    }
+  }
+  
+  /* Screen size between 481px and 768px */
+  @media only screen and (min-width: 30.0625rem) and (max-width: 48rem) {
+    .container-1 {
+      width: 100% !important;
+    }
+  
+    .Form-container {
+      width: 90%;
+    }
+  
+    .img-container {
+      display: none;
+    }
+  }
+  
+  /* Screen size between 769px and 1024px */
+  @media only screen and (min-width: 48.0625rem) and (max-width: 64rem) {
+    .container-1 {
+      width: 100% !important;
+    }
+  
+    .Form-container {
+      width: 90%;
+    }
+  
+    .img-container {
+      display: none;
+    }
+  }
+  
+  /* Screen size greater than 1024px */
+  @media only screen and (min-width: 64.0625rem) and (max-width: 80rem) {
+    .container {
+      flex-direction: row;
+    }
+  
+    .container-1 {
+      width: 50%;
+    }
+  
+    .Form-container {
+      width: 80%;
+    }
+  
+    .img-container {
+      width: 50vw;
+      border-radius: 25px;
+    }
+  }
